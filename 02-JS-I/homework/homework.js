@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  console.log("esto es string");
+  return str;
 }
 
 function suma(x, y) {
@@ -72,8 +72,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  var mido1= str1;
-  var mido2= str2;
+  var mido1= str1.length;
+  var mido2= str2.length;
   var mido= mido1 == mido2;
   return mido
 }
@@ -175,9 +175,9 @@ function esPositivo(numero) {
   if (numero == 0) {
     return false}
 if (numero > 0) {
-    return "es positivo" }
+    return "Es positivo" }
 if (numero < 0) {
-    return "es negativo" }
+    return "Es negativo" }
 }
 
 function agregarSimboloExclamacion(str) {
@@ -192,22 +192,21 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  console.log( `${nombre} ${apellido}`);
+  return nombre + " " + apellido
   }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  console.log('Hola, ' + nombre + "!");
+  return "Hola " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   var sup= (alto * ancho);
-  var sup1= (sup + "cm²");
-  return sup1
+   return sup
 }
 
 
@@ -223,7 +222,7 @@ function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
 var trian= (base * altura) / 2;
-var trian1= (trian1 + "cm²")
+return trian
 }
 
 
@@ -231,9 +230,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var dol= euro * 1.20;
- var dol1= ("la equivalencia de € " + euro + "  a u$s es igual a " + dol + " dólares"); 
-    return dol1
+  var dol= euro * 1.20
+    return dol
 }
 
 
@@ -244,10 +242,10 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
-    console.log('Es vocal')
-} else {console.log('Dato incorrecto')
+    return "Es vocal";
+} else {return "Dato incorrecto";
        } if (letra.length !== 1) {
-           console.log("Dato incorrecto")}
+           return "Dato incorrecto";}
 }
 
 
